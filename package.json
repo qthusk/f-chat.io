@@ -1,0 +1,33 @@
+{
+  "name": "f-chat.io",
+  "version": "0.1.0",
+  "description": "Client library for using the F-Chat protocol (https://wiki.f-list.net/F-Chat_Protocol) the \"node-js\" way.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "f-chat",
+    "f-list",
+    "protocol",
+    "client"
+  ],
+  "author": "Quentin Husky <qthusk@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qthusk/f-chat.io"
+  },
+  "bugs": {
+    "url": "https://github.com/qthusk/f-chat.io/issues"
+  },
+  "license": "GPLv3",
+  "dependencies": {
+    "request": "^2.55.0",
+    "ws": "^0.7.2"
+  },
+  "devDependencies": {},
+  "directories": [
+    "doc",
+    "lib"
+  ]
+}
