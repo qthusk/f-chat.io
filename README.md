@@ -35,6 +35,13 @@ fchat.on('error', function(err) {
   console.log('[Error]: ' + err);
 });
 
+// Got API ticket from https://www.f-list.net/json/getApiTicket.php
+fchat.on('ticket', function(err, data) {
+  if (!err) {
+    console.log('Requested ticket: ' + data.ticket);
+  }
+});
+
 // WebSocket connection established
 fchat.on('connected', function() {
   console.log('Client connected');
@@ -42,13 +49,6 @@ fchat.on('connected', function() {
   // Something caused the WebSocket to disconnect
   fchat.on('disconnected', function() {
     console.log('Client disconnected');
-  });
-
-  // Got API ticket from https://www.f-list.net/json/getApiTicket.php
-  fchat.on('ticket', function(err, data) {
-    if (!err) {
-      console.log('Requested ticket: ' + data.ticket);
-    }
   });
 
   // Got IDN from server, after automatically sending IDN from client
