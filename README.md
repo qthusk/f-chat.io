@@ -89,7 +89,7 @@ The full signature of FChatClient.connect(...) is
 FChatClient.connect(<account>, <credentials>, <options>);
 ```
 
-<options> is a JS object which can contain the following keys and values:
+**\<options\>** is a JS object which can contain the following keys and values:
 ```js
 {
     autoPing:             <boolean> // [true] -> automatically respond with
